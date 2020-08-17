@@ -19,6 +19,9 @@ describe("Testing from inputs", () => {
     cy.get("[data-cy=bacon]").check().should("be.checked");
     cy.get("[data-cy=chicken]").check().should("be.checked");
     cy.get("[data-cy=sausage]").check().should("be.checked");
+    cy.get('[data-cy="instructions"]')
+      .type("Draw an angry squid")
+      .should("have.value", "Draw an angry squid");
     cy.get("[data-cy=submit]").click();
   });
 });

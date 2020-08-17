@@ -184,6 +184,7 @@ const Pizza = () => {
             id="instructions"
             type="text"
             name="instructions"
+            data-cy="instructions"
             placeholder="Add any special instructions"
             value={formState.instructions}
             onChange={orderChange}
