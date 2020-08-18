@@ -20,12 +20,11 @@ const Pizza = () => {
   const [errors, setErrors] = useState({
     name: "",
     pizzasize: "",
-    toppings: {
-      pepperoni: false,
-      bacon: false,
-      chicken: false,
-      sausage: false,
-    },
+
+    pepperoni: false,
+    bacon: false,
+    chicken: false,
+    sausage: false,
     instructions: "",
   });
 
